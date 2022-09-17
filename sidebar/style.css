@@ -1,0 +1,93 @@
+body{
+  font-family: sans-serif;
+  margin: 0;padding: 0;
+}
+*{
+  box-sizing: border-box;
+}
+.nav-header{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 30px 30px;
+}
+
+.toggle-btn{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.toggle-btn span:not(:first-child){
+  margin-top: -10px;
+}
+.navbar-wrapper{
+  position: relative;
+  height: 100%;
+}
+.sidebar{
+  position: fixed;
+  top: 0px;
+  left: -400px;
+  width: 300px;
+  height: 100%;
+  background: rgb(0, 141, 206);
+  transition: .6s;
+  padding: 30px 0px;
+}
+.sidebar.active{
+  left: 0px;
+}
+.nav-brand{
+  padding: 0px 30px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.close-btn{
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  font-size: 18px;
+  color: rgb(75, 75, 75);
+  font-weight: bold;
+  padding: px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
+.navbar{
+  list-style: none;
+  padding: 0;
+}
+li{
+  margin: 5px 0px;
+}
+li a{
+  padding: 20px 30px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  transition: .5s;
+  font-size: 14px;
+}
+
+li a:hover{
+  background: rgba(255, 255, 255, 0.623);
+  padding-left: 40px;
+}
+
+@media screen and (max-width:428px) {
+  
+  .sidebar{
+    position: fixed;
+    top: 0px;
+    left: -400px;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 141, 206);
+    transition: .6s;
+    padding: 30px 0px;
+  }
+}

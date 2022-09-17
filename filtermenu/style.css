@@ -1,0 +1,103 @@
+body{
+  font-family: sans-serif;
+  margin: 0;padding: 0;
+}
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  padding: 15px;
+}
+.heading{
+  text-align: center;
+  border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+.filter-menu{
+  text-align: center;
+}
+
+.filter{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.filter li{
+  margin: 5px;
+}
+.filter-btn{
+  background: rgb(0, 149, 207);
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 3px;
+  box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.2);
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition:  .3s;
+}
+.filter-btn:active{
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+.filter-btn.active{
+  background: rgb(0, 187, 178);
+}
+.filter-contents{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.card{
+  padding: 5px;
+  border: 1px solid rgb(230, 230, 230);
+  margin-bottom: 25px;
+  border-radius: 5px;
+  transition: .3s;
+  cursor: pointer;
+}
+.card-body{
+  padding: 10px;
+}
+.card-body h4{
+  margin: 0px;
+}
+.card-body p{
+  color: rgb(126, 126, 126);
+}
+
+.card-body button{
+  border: none;
+  padding: 7px 20px;
+  border-radius: 3px;
+  margin: 0 auto;
+  background: rgb(143, 229, 255);
+  color: rgb(27, 27, 27);
+  cursor: pointer;
+}
+
+.card img{
+  width: 100%;
+}
+.card:hover{
+  box-shadow: 0px 5px 30px rgba(0,0,0,0.2);
+}
+
+@media screen and (min-width:768px) {
+  
+  .col-lg-3{
+    width: 25%;
+    padding: 0px 15px;
+  }
+
+}
